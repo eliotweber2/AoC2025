@@ -25,7 +25,7 @@ def check_ranges(str_in):
         start, end = str_range.split('-')
         #print(int(end) - int(start))
         for n in range(int(start),int(end)+1):
-            if check_num_simple(n):
+            if check_num(n):
                 #print(n)
                 ct += n
 

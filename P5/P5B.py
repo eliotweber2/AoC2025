@@ -47,7 +47,8 @@ def main(str_in):
          extend_range(range,comb_ranges)
 
     for fresh_range in comb_ranges:
-         ct += (fresh_range[1] - fresh_range[0])+1
+        print(fresh_range)
+        ct += (fresh_range[1] - fresh_range[0])+1
     
     return ct
 

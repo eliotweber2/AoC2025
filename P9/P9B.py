@@ -202,7 +202,7 @@ def parse(str_in):
     
     return pts
 
-coords_lst = parse(real)
+coords_lst = parse(example)
 
 new_lst = copy.deepcopy(coords_lst)
 

@@ -54,4 +54,19 @@ def parse(str_in):
 
 to_dict,from_dict = parse(real)
 
-print(get_all_paths(from_dict,'out','you'))
+out_dac = get_all_paths(from_dict,'out','dac')
+cache = {}
+dac_fft = get_all_paths(from_dict,'dac','fft')
+cache = {}
+fft_svr = get_all_paths(from_dict,'fft','svr')
+path1 = out_dac*dac_fft*fft_svr
+
+cache = {}
+out_fft = get_all_paths(from_dict,'out','fft')
+cache = {}
+fft_dac = get_all_paths(from_dict,'fft','dac')
+cache = {}
+dac_svr = get_all_paths(from_dict,'dac','svr')
+path2 = out_fft*fft_dac*dac_svr
+
+print(path1+path2)
